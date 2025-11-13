@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./images/header/favicon.png">
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
@@ -89,7 +90,14 @@
                     <li><a href="#">Infrastructure</a></li>
                     <li><a href="#">Ask Maan</a></li>
                     <li><a href="#">Sustainability</a></li>
-                    <li><a href="#">Resources</a></li>
+                    <li>
+                        <a href="#">Resources</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Blogs</a></li>
+                            <li><a href="#">News</a></li>
+                            <li><a href="#">Events</a></li>
+                        </ul>
+                    </li>
                     <li><a href="#">Career</a></li>
                     <li><a href="#">Contact Us</a></li>
                 </ul>
@@ -107,7 +115,7 @@
                     </a>
                 </div>
                 <div class="icon-separator">
-                    <a class="phone" href="#">
+                    <a class="phone" href="tel:">
                         <img src="./images/header/PhoneCall.svg" alt="phone">
                     </a>
                 </div>
@@ -116,7 +124,54 @@
         </div>
 
     </header>
+    <div id="search-overlay" class="search-overlay">
+        <div class="search-overlay-content">
+            <form class="frmWrap">
+                <div class="searchInputBlg">
+                    <img src="./images/blog/magnify.png" alt="">
+                </div>
+                <input type="text" class="inputTxt" placeholder="Search">
+                <input type="submit" class="srchBtn" value="">
+            </form>
+            <span id="close-search" class="close-btn">&times;</span>
+        </div>
+    </div>
     <a href="#" class="enquire-btn"><span>Enquire Now</span></a>
+    <!-- Sliding Enquiry Panel -->
+    <div id="enquiry-panel" class="enquiry-panel">
+        <div class="enquiry-content">
+            <a class="logo" href="#">
+                <img src="./images/header/logo-main.png" alt="Maan Shakti Logo">
+            </a>
+            <span id="close-enquiry" class="close-btn">&times;</span>
+
+            <h2>Get in Touch</h2>
+            <p>Share your details below to start your journey with us!</p>
+
+            <form>
+
+                <input type="text" placeholder="Enter your name" required>
+
+
+                <input type="email" placeholder="Enter your email" required>
+
+
+                <input type="tel" placeholder="+91 XXXXX XXXXX" required>
+
+
+                <textarea rows="3" placeholder="Type your message here..."></textarea>
+
+                <div class="inputBox submitBox tar">
+                    <div class="common-btn color-red">
+                        <input type="submit" value="Submit" />
+                        <div class="button-dot color-blue">
+                            <img src="./images/common-images/button-dot.png" alt="button-dot">
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
     <a href="#" class="wp-icon">
         <img src="./images/common-images/whatsapp.png" alt="whatsapp-ic">
     </a>
@@ -191,7 +246,7 @@
                 </div>
                 <div class="slick-slide">
                     <div class="inner">
-                        BIS Certificated
+                        Integrated Manufacturing
                     </div>
                 </div>
 
@@ -464,15 +519,152 @@
                 </div>
             </div>
         </section>
-        <section class="common-sec-padding application"
-            style="background-image: url(./images/index/application-bg.jpg);">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="secHeadWrap">
-                            <strong class="smallTitle text-white">Application</strong>
+        <section class=" application rel">
+            <div class='tabpanels'>
+                <div role='tabpanel' id='tabpanel-1' aria-labelledby='tab-1' tabindex='0'
+                    class="common-sec-padding tabpanel"
+                    style="background-image: url(./images/index/application-bg.jpg);">
+                    <div class='tabpanel-content'>
+                        <div class='content-text'>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="secHeadWrap">
+                                            <strong class="smallTitle text-white">Application</strong>
+                                        </div>
+                                        <h2 class='secHead text-white'>Real Estate Industry</h2>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                                            velit esse cillum dolore eu fugiat nulla pariatur</p>
+                                        <p>Ex sapien vitae pellentesque sem placerat in id. Consectetur adipiscing
+                                            elit quisque faucibus ex sapien vitae. Lorem ipsum dolor sit amet
+                                            consectetur adipiscing elit. </p>
+
+                                        <a href="" class="common-btn color-red">
+                                            <span>Discover Now</span>
+                                            <div class="button-dot color-blue">
+                                                <img src="./images/common-images/button-dot.png" alt="arrow-right">
+                                            </div>
+
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
+                </div>
+                <div role='tabpanel' id='tabpanel-2' aria-labelledby='tab-2' class="common-sec-padding tabpanel"
+                    style="background-image: url(./images/index/parallax-image.jpg);">
+                    <div class='tabpanel-content'>
+
+                        <div class='content-text'>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="secHeadWrap">
+                                            <strong class="smallTitle text-white">Application</strong>
+                                        </div>
+                                        <h2 class='secHead text-white'>Transport Industry</h2>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                                            velit esse cillum dolore eu fugiat nulla pariatur</p>
+                                        <p>Ex sapien vitae pellentesque sem placerat in id. Consectetur adipiscing
+                                            elit quisque faucibus ex sapien vitae. Lorem ipsum dolor sit amet
+                                            consectetur adipiscing elit. </p>
+
+                                        <a href="" class="common-btn color-red">
+                                            <span>Discover Now</span>
+                                            <div class="button-dot color-blue">
+                                                <img src="./images/common-images/button-dot.png" alt="arrow-right">
+                                            </div>
+
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div role='tabpanel' id='tabpanel-3' aria-labelledby='tab-3' class="common-sec-padding tabpanel"
+                    style="background-image: url(./images/index/st-bg-1.jpg);">
+                    <div class='tabpanel-content'>
+
+                        <div class='content-text'>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="secHeadWrap">
+                                            <strong class="smallTitle text-white">Application</strong>
+                                        </div>
+                                        <h2 class='secHead text-white'>Hospital Industry</h2>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                                            velit esse cillum dolore eu fugiat nulla pariatur</p>
+                                        <p>Ex sapien vitae pellentesque sem placerat in id. Consectetur adipiscing
+                                            elit quisque faucibus ex sapien vitae. Lorem ipsum dolor sit amet
+                                            consectetur adipiscing elit. </p>
+
+                                        <a href="" class="common-btn color-red">
+                                            <span>Discover Now</span>
+                                            <div class="button-dot color-blue">
+                                                <img src="./images/common-images/button-dot.png" alt="arrow-right">
+                                            </div>
+
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div role='tabpanel' id='tabpanel-4' aria-labelledby='tab-4' class="common-sec-padding tabpanel"
+                    style="background-image: url(./images/index/demo-bg.jpg);">
+                    <div class='tabpanel-content'>
+
+                        <div class='content-text'>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="secHeadWrap">
+                                            <strong class="smallTitle text-white">Application</strong>
+                                        </div>
+                                        <h2 class='secHead text-white'>Hotel Industry</h2>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                                            velit esse cillum dolore eu fugiat nulla pariatur</p>
+                                        <p>Ex sapien vitae pellentesque sem placerat in id. Consectetur adipiscing
+                                            elit quisque faucibus ex sapien vitae. Lorem ipsum dolor sit amet
+                                            consectetur adipiscing elit. </p>
+
+                                        <a href="" class="common-btn color-red">
+                                            <span>Discover Now</span>
+                                            <div class="button-dot color-blue">
+                                                <img src="./images/common-images/button-dot.png" alt="arrow-right">
+                                            </div>
+
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="container">
+                <div class="row">
                     <div class="col-md-9">
                         <div class='tabs'>
                             <div role='tablist'>
@@ -495,109 +687,16 @@
 
 
                             </div>
-                            <div class='tabpanels'>
-                                <div role='tabpanel' id='tabpanel-1' aria-labelledby='tab-1' tabindex='0'>
-                                    <div class='tabpanel-content'>
-
-                                        <div class='content-text'>
-
-                                            <h2 class='secHead text-white'>Real Estate Industry</h2>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                                                velit esse cillum dolore eu fugiat nulla pariatur</p>
-                                            <p>Ex sapien vitae pellentesque sem placerat in id. Consectetur adipiscing
-                                                elit quisque faucibus ex sapien vitae. Lorem ipsum dolor sit amet
-                                                consectetur adipiscing elit. </p>
-
-                                            <a href="" class="common-btn color-red">
-                                                <span>Discover Now</span>
-                                                <div class="button-dot color-blue">
-                                                    <img src="./images/common-images/button-dot.png" alt="arrow-right">
-                                                </div>
-
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div role='tabpanel' id='tabpanel-2' aria-labelledby='tab-2'>
-                                    <div class='tabpanel-content'>
-
-                                        <div class='content-text'>
-
-                                            <h2 class='secHead text-white'>Transport Industry</h2>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                                                velit esse cillum dolore eu fugiat nulla pariatur</p>
-                                            <p>Ex sapien vitae pellentesque sem placerat in id. Consectetur adipiscing
-                                                elit quisque faucibus ex sapien vitae. Lorem ipsum dolor sit amet
-                                                consectetur adipiscing elit. </p>
-                                            <a href="" class="common-btn color-red">
-                                                <span>Discover Now</span>
-                                                <div class="button-dot color-blue">
-                                                    <img src="./images/common-images/button-dot.png" alt="arrow-right">
-                                                </div>
-
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div role='tabpanel' id='tabpanel-3' aria-labelledby='tab-3'>
-                                    <div class='tabpanel-content'>
-
-                                        <div class='content-text'>
-
-                                            <h2 class='secHead text-white'>Hospital Industry</h2>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                                                velit esse cillum dolore eu fugiat nulla pariatur</p>
-                                            <p>Ex sapien vitae pellentesque sem placerat in id. Consectetur adipiscing
-                                                elit quisque faucibus ex sapien vitae. Lorem ipsum dolor sit amet
-                                                consectetur adipiscing elit. </p>
-                                            <a href="" class="common-btn color-red">
-                                                <span>Discover Now</span>
-                                                <div class="button-dot color-blue">
-                                                    <img src="./images/common-images/button-dot.png" alt="arrow-right">
-                                                </div>
-
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div role='tabpanel' id='tabpanel-4' aria-labelledby='tab-4'>
-                                    <div class='tabpanel-content'>
-
-                                        <div class='content-text'>
-
-                                            <h2 class='secHead text-white'>Hotel Industry</h2>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                                                velit esse cillum dolore eu fugiat nulla pariatur</p>
-                                            <p>Ex sapien vitae pellentesque sem placerat in id. Consectetur adipiscing
-                                                elit quisque faucibus ex sapien vitae. Lorem ipsum dolor sit amet
-                                                consectetur adipiscing elit. </p>
-                                            <a href="" class="common-btn color-red">
-                                                <span>Discover Now</span>
-                                                <div class="button-dot color-blue">
-                                                    <img src="./images/common-images/button-dot.png" alt="arrow-right">
-                                                </div>
-
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
                         </div>
                     </div>
                 </div>
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+
+            </div>
             </div>
         </section>
         <section class="testimonialsec logomarqueeSlider common-sec-padding">
@@ -897,31 +996,31 @@
             </div>
 
         </section>
-        
+
         <section class="deailership-sec common-sec-padding">
             <div class="container">
                 <div class="d-flex align-items-center">
-                    <div class="col-md-10">
+                    <div class="col-md-9">
                         <div class="secHeadWrap">
                             <strong class="smallTitle blueText">Dealership</strong>
                             <h2 class="secHead">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
                         </div>
                     </div>
                     <div class="">
-                        <button href="" class="common-btn color-red d-flex mb-3">
+                        <a href="" class="common-btn color-red d-flex mb-3">
                             <span>Find Your Dealer</span>
                             <div class="button-dot color-blue">
                                 <img src="./images/common-images/button-dot.png" alt="arrow-right">
                             </div>
 
-                        </button>
-                        <button href="" class="common-btn color-blue d-flex">
+                        </a>
+                        <a href="#" class="common-btn color-blue d-flex">
                             <span>Become a Dealer</span>
                             <div class="button-dot color-red">
                                 <img src="./images/common-images/button-dot.png" alt="arrow-right">
                             </div>
 
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -973,13 +1072,13 @@
                                             <h3 class="accTrigger active">News</h3>
                                             <div class="accCont tabContinner">
                                                 <div class="prs-nav">
-                                <div class="btn prs-swiper-button-prev">
-                                    <img src="./images/index/Arrow-black.png" alt="">
-                                </div>
-                                <div class="btn prs-swiper-button-next">
-                                    <img src="./images/index/Arrow-black.png" alt="">
-                                </div>
-                            </div>
+                                                    <div class="btn prs-swiper-button-prev">
+                                                        <img src="./images/index/Arrow-black.png" alt="">
+                                                    </div>
+                                                    <div class="btn prs-swiper-button-next">
+                                                        <img src="./images/index/Arrow-black.png" alt="">
+                                                    </div>
+                                                </div>
                                                 <div class="accInner">
                                                     <div class="pressSlider pressSlick">
 
@@ -998,20 +1097,31 @@
 
 
                                                                 <div class="pressCardSub-wrap">
-                                                                    <div class=""><span><img
+                                                                    <div class="">
+                                                                        <figure><img
                                                                                 src="./images/common-images/calendar.png" />
-                                                                        </span><span class="pressDate">25th Sep
-                                                                            2024</span></div>
-                                                                    <div class=""><span><img
+                                                                        </figure>
+                                                                        <p class="pressDate">25th Sep
+                                                                            2024</p>
+                                                                    </div>
+                                                                    <div class="">
+                                                                        <figure><img
                                                                                 src="./images/common-images/viewer.png" />
-                                                                        </span><span class="pressDate">256</span></div>
+                                                                        </figure>
+                                                                        <p class="pressDate">256
+                                                                        </p>
+                                                                    </div>
                                                                     <div class=""><span><img
                                                                                 src="./images/common-images/chat.png" />
-                                                                        </span><span class="pressDate">56</span></div>
+                                                                        </span>
+                                                                        <p class="pressDate">56
+                                                                        </p>
+                                                                    </div>
                                                                 </div>
 
                                                                 <div class="pressTextInn">
-                                                                    <a href="#" tabindex="0" class="press-text">Lorem ipsum dolor sit amet,
+                                                                    <a href="#" tabindex="0" class="press-text">Lorem
+                                                                        ipsum dolor sit amet,
                                                                         consectetur
                                                                         adipiscing elit, sed do eiusmod tempor
                                                                     </a>
@@ -1039,20 +1149,31 @@
 
 
                                                                 <div class="pressCardSub-wrap">
-                                                                    <div class=""><span><img
+                                                                    <div class="">
+                                                                        <figure><img
                                                                                 src="./images/common-images/calendar.png" />
-                                                                        </span><span class="pressDate">25th Sep
-                                                                            2024</span></div>
-                                                                    <div class=""><span><img
+                                                                        </figure>
+                                                                        <p class="pressDate">25th Sep
+                                                                            2024</p>
+                                                                    </div>
+                                                                    <div class="">
+                                                                        <figure><img
                                                                                 src="./images/common-images/viewer.png" />
-                                                                        </span><span class="pressDate">256</span></div>
+                                                                        </figure>
+                                                                        <p class="pressDate">256
+                                                                        </p>
+                                                                    </div>
                                                                     <div class=""><span><img
                                                                                 src="./images/common-images/chat.png" />
-                                                                        </span><span class="pressDate">56</span></div>
+                                                                        </span>
+                                                                        <p class="pressDate">56
+                                                                        </p>
+                                                                    </div>
                                                                 </div>
 
                                                                 <div class="pressTextInn">
-                                                                    <a href="#" tabindex="0" class="press-text">Lorem ipsum dolor sit amet,
+                                                                    <a href="#" tabindex="0" class="press-text">Lorem
+                                                                        ipsum dolor sit amet,
                                                                         consectetur
                                                                         adipiscing elit, sed do eiusmod tempor
                                                                     </a>
@@ -1080,20 +1201,31 @@
 
 
                                                                 <div class="pressCardSub-wrap">
-                                                                    <div class=""><span><img
+                                                                    <div class="">
+                                                                        <figure><img
                                                                                 src="./images/common-images/calendar.png" />
-                                                                        </span><span class="pressDate">25th Sep
-                                                                            2024</span></div>
-                                                                    <div class=""><span><img
+                                                                        </figure>
+                                                                        <p class="pressDate">25th Sep
+                                                                            2024</p>
+                                                                    </div>
+                                                                    <div class="">
+                                                                        <figure><img
                                                                                 src="./images/common-images/viewer.png" />
-                                                                        </span><span class="pressDate">256</span></div>
+                                                                        </figure>
+                                                                        <p class="pressDate">256
+                                                                        </p>
+                                                                    </div>
                                                                     <div class=""><span><img
                                                                                 src="./images/common-images/chat.png" />
-                                                                        </span><span class="pressDate">56</span></div>
+                                                                        </span>
+                                                                        <p class="pressDate">56
+                                                                        </p>
+                                                                    </div>
                                                                 </div>
 
                                                                 <div class="pressTextInn">
-                                                                    <a href="#" tabindex="0" class="press-text">Lorem ipsum dolor sit amet,
+                                                                    <a href="#" tabindex="0" class="press-text">Lorem
+                                                                        ipsum dolor sit amet,
                                                                         consectetur
                                                                         adipiscing elit, sed do eiusmod tempor
                                                                     </a>
@@ -1121,20 +1253,31 @@
 
 
                                                                 <div class="pressCardSub-wrap">
-                                                                    <div class=""><span><img
+                                                                    <div class="">
+                                                                        <figure><img
                                                                                 src="./images/common-images/calendar.png" />
-                                                                        </span><span class="pressDate">25th Sep
-                                                                            2024</span></div>
-                                                                    <div class=""><span><img
+                                                                        </figure>
+                                                                        <p class="pressDate">25th Sep
+                                                                            2024</p>
+                                                                    </div>
+                                                                    <div class="">
+                                                                        <figure><img
                                                                                 src="./images/common-images/viewer.png" />
-                                                                        </span><span class="pressDate">256</span></div>
+                                                                        </figure>
+                                                                        <p class="pressDate">256
+                                                                        </p>
+                                                                    </div>
                                                                     <div class=""><span><img
                                                                                 src="./images/common-images/chat.png" />
-                                                                        </span><span class="pressDate">56</span></div>
+                                                                        </span>
+                                                                        <p class="pressDate">56
+                                                                        </p>
+                                                                    </div>
                                                                 </div>
 
                                                                 <div class="pressTextInn">
-                                                                    <a href="#" tabindex="0" class="press-text">Lorem ipsum dolor sit amet,
+                                                                    <a href="#" tabindex="0" class="press-text">Lorem
+                                                                        ipsum dolor sit amet,
                                                                         consectetur
                                                                         adipiscing elit, sed do eiusmod tempor
                                                                     </a>
@@ -1171,20 +1314,31 @@
 
 
                                                                 <div class="pressCardSub-wrap">
-                                                                    <div class=""><span><img
+                                                                    <div class="">
+                                                                        <figure><img
                                                                                 src="./images/common-images/calendar.png" />
-                                                                        </span><span class="pressDate">25th Sep
-                                                                            2024</span></div>
-                                                                    <div class=""><span><img
+                                                                        </figure>
+                                                                        <p class="pressDate">25th Sep
+                                                                            2024</p>
+                                                                    </div>
+                                                                    <div class="">
+                                                                        <figure><img
                                                                                 src="./images/common-images/viewer.png" />
-                                                                        </span><span class="pressDate">256</span></div>
+                                                                        </figure>
+                                                                        <p class="pressDate">256
+                                                                        </p>
+                                                                    </div>
                                                                     <div class=""><span><img
                                                                                 src="./images/common-images/chat.png" />
-                                                                        </span><span class="pressDate">56</span></div>
+                                                                        </span>
+                                                                        <p class="pressDate">56
+                                                                        </p>
+                                                                    </div>
                                                                 </div>
 
                                                                 <div class="pressTextInn">
-                                                                    <a href="#" tabindex="0" class="press-text">Lorem ipsum dolor sit amet,
+                                                                    <a href="#" tabindex="0" class="press-text">Lorem
+                                                                        ipsum dolor sit amet,
                                                                         consectetur
                                                                         adipiscing elit, sed do eiusmod tempor
                                                                     </a>
@@ -1212,20 +1366,31 @@
 
 
                                                                 <div class="pressCardSub-wrap">
-                                                                    <div class=""><span><img
+                                                                    <div class="">
+                                                                        <figure><img
                                                                                 src="./images/common-images/calendar.png" />
-                                                                        </span><span class="pressDate">25th Sep
-                                                                            2024</span></div>
-                                                                    <div class=""><span><img
+                                                                        </figure>
+                                                                        <p class="pressDate">25th Sep
+                                                                            2024</p>
+                                                                    </div>
+                                                                    <div class="">
+                                                                        <figure><img
                                                                                 src="./images/common-images/viewer.png" />
-                                                                        </span><span class="pressDate">256</span></div>
+                                                                        </figure>
+                                                                        <p class="pressDate">256
+                                                                        </p>
+                                                                    </div>
                                                                     <div class=""><span><img
                                                                                 src="./images/common-images/chat.png" />
-                                                                        </span><span class="pressDate">56</span></div>
+                                                                        </span>
+                                                                        <p class="pressDate">56
+                                                                        </p>
+                                                                    </div>
                                                                 </div>
 
                                                                 <div class="pressTextInn">
-                                                                    <a href="#" tabindex="0" class="press-text">Lorem ipsum dolor sit amet,
+                                                                    <a href="#" tabindex="0" class="press-text">Lorem
+                                                                        ipsum dolor sit amet,
                                                                         consectetur
                                                                         adipiscing elit, sed do eiusmod tempor
                                                                     </a>
@@ -1252,20 +1417,31 @@
 
 
                                                                 <div class="pressCardSub-wrap">
-                                                                    <div class=""><span><img
+                                                                    <div class="">
+                                                                        <figure><img
                                                                                 src="./images/common-images/calendar.png" />
-                                                                        </span><span class="pressDate">25th Sep
-                                                                            2024</span></div>
-                                                                    <div class=""><span><img
+                                                                        </figure>
+                                                                        <p class="pressDate">25th Sep
+                                                                            2024</p>
+                                                                    </div>
+                                                                    <div class="">
+                                                                        <figure><img
                                                                                 src="./images/common-images/viewer.png" />
-                                                                        </span><span class="pressDate">256</span></div>
+                                                                        </figure>
+                                                                        <p class="pressDate">256
+                                                                        </p>
+                                                                    </div>
                                                                     <div class=""><span><img
                                                                                 src="./images/common-images/chat.png" />
-                                                                        </span><span class="pressDate">56</span></div>
+                                                                        </span>
+                                                                        <p class="pressDate">56
+                                                                        </p>
+                                                                    </div>
                                                                 </div>
 
                                                                 <div class="pressTextInn">
-                                                                    <a href="#" tabindex="0" class="press-text">Lorem ipsum dolor sit amet,
+                                                                    <a href="#" tabindex="0" class="press-text">Lorem
+                                                                        ipsum dolor sit amet,
                                                                         consectetur
                                                                         adipiscing elit, sed do eiusmod tempor
                                                                     </a>
@@ -1293,20 +1469,31 @@
 
 
                                                                 <div class="pressCardSub-wrap">
-                                                                    <div class=""><span><img
+                                                                    <div class="">
+                                                                        <figure><img
                                                                                 src="./images/common-images/calendar.png" />
-                                                                        </span><span class="pressDate">25th Sep
-                                                                            2024</span></div>
-                                                                    <div class=""><span><img
+                                                                        </figure>
+                                                                        <p class="pressDate">25th Sep
+                                                                            2024</p>
+                                                                    </div>
+                                                                    <div class="">
+                                                                        <figure><img
                                                                                 src="./images/common-images/viewer.png" />
-                                                                        </span><span class="pressDate">256</span></div>
+                                                                        </figure>
+                                                                        <p class="pressDate">256
+                                                                        </p>
+                                                                    </div>
                                                                     <div class=""><span><img
                                                                                 src="./images/common-images/chat.png" />
-                                                                        </span><span class="pressDate">56</span></div>
+                                                                        </span>
+                                                                        <p class="pressDate">56
+                                                                        </p>
+                                                                    </div>
                                                                 </div>
 
                                                                 <div class="pressTextInn">
-                                                                    <a href="#" tabindex="0" class="press-text">Lorem ipsum dolor sit amet,
+                                                                    <a href="#" tabindex="0" class="press-text">Lorem
+                                                                        ipsum dolor sit amet,
                                                                         consectetur
                                                                         adipiscing elit, sed do eiusmod tempor
                                                                     </a>
@@ -1343,20 +1530,31 @@
 
 
                                                                 <div class="pressCardSub-wrap">
-                                                                    <div class=""><span><img
+                                                                    <div class="">
+                                                                        <figure><img
                                                                                 src="./images/common-images/calendar.png" />
-                                                                        </span><span class="pressDate">25th Sep
-                                                                            2024</span></div>
-                                                                    <div class=""><span><img
+                                                                        </figure>
+                                                                        <p class="pressDate">25th Sep
+                                                                            2024</p>
+                                                                    </div>
+                                                                    <div class="">
+                                                                        <figure><img
                                                                                 src="./images/common-images/viewer.png" />
-                                                                        </span><span class="pressDate">256</span></div>
+                                                                        </figure>
+                                                                        <p class="pressDate">256
+                                                                        </p>
+                                                                    </div>
                                                                     <div class=""><span><img
                                                                                 src="./images/common-images/chat.png" />
-                                                                        </span><span class="pressDate">56</span></div>
+                                                                        </span>
+                                                                        <p class="pressDate">56
+                                                                        </p>
+                                                                    </div>
                                                                 </div>
 
                                                                 <div class="pressTextInn">
-                                                                    <a href="#" tabindex="0" class="press-text">Lorem ipsum dolor sit amet,
+                                                                    <a href="#" tabindex="0" class="press-text">Lorem
+                                                                        ipsum dolor sit amet,
                                                                         consectetur
                                                                         adipiscing elit, sed do eiusmod tempor
                                                                     </a>
@@ -1384,20 +1582,31 @@
 
 
                                                                 <div class="pressCardSub-wrap">
-                                                                    <div class=""><span><img
+                                                                    <div class="">
+                                                                        <figure><img
                                                                                 src="./images/common-images/calendar.png" />
-                                                                        </span><span class="pressDate">25th Sep
-                                                                            2024</span></div>
-                                                                    <div class=""><span><img
+                                                                        </figure>
+                                                                        <p class="pressDate">25th Sep
+                                                                            2024</p>
+                                                                    </div>
+                                                                    <div class="">
+                                                                        <figure><img
                                                                                 src="./images/common-images/viewer.png" />
-                                                                        </span><span class="pressDate">256</span></div>
+                                                                        </figure>
+                                                                        <p class="pressDate">256
+                                                                        </p>
+                                                                    </div>
                                                                     <div class=""><span><img
                                                                                 src="./images/common-images/chat.png" />
-                                                                        </span><span class="pressDate">56</span></div>
+                                                                        </span>
+                                                                        <p class="pressDate">56
+                                                                        </p>
+                                                                    </div>
                                                                 </div>
 
                                                                 <div class="pressTextInn">
-                                                                    <a href="#" tabindex="0" class="press-text">Lorem ipsum dolor sit amet,
+                                                                    <a href="#" tabindex="0" class="press-text">Lorem
+                                                                        ipsum dolor sit amet,
                                                                         consectetur
                                                                         adipiscing elit, sed do eiusmod tempor
                                                                     </a>
@@ -1425,20 +1634,31 @@
 
 
                                                                 <div class="pressCardSub-wrap">
-                                                                    <div class=""><span><img
+                                                                    <div class="">
+                                                                        <figure><img
                                                                                 src="./images/common-images/calendar.png" />
-                                                                        </span><span class="pressDate">25th Sep
-                                                                            2024</span></div>
-                                                                    <div class=""><span><img
+                                                                        </figure>
+                                                                        <p class="pressDate">25th Sep
+                                                                            2024</p>
+                                                                    </div>
+                                                                    <div class="">
+                                                                        <figure><img
                                                                                 src="./images/common-images/viewer.png" />
-                                                                        </span><span class="pressDate">256</span></div>
+                                                                        </figure>
+                                                                        <p class="pressDate">256
+                                                                        </p>
+                                                                    </div>
                                                                     <div class=""><span><img
                                                                                 src="./images/common-images/chat.png" />
-                                                                        </span><span class="pressDate">56</span></div>
+                                                                        </span>
+                                                                        <p class="pressDate">56
+                                                                        </p>
+                                                                    </div>
                                                                 </div>
 
                                                                 <div class="pressTextInn">
-                                                                    <a href="#" tabindex="0" class="press-text">Lorem ipsum dolor sit amet,
+                                                                    <a href="#" tabindex="0" class="press-text">Lorem
+                                                                        ipsum dolor sit amet,
                                                                         consectetur
                                                                         adipiscing elit, sed do eiusmod tempor
                                                                     </a>
@@ -1466,20 +1686,31 @@
 
 
                                                                 <div class="pressCardSub-wrap">
-                                                                    <div class=""><span><img
+                                                                    <div class="">
+                                                                        <figure><img
                                                                                 src="./images/common-images/calendar.png" />
-                                                                        </span><span class="pressDate">25th Sep
-                                                                            2024</span></div>
-                                                                    <div class=""><span><img
+                                                                        </figure>
+                                                                        <p class="pressDate">25th Sep
+                                                                            2024</p>
+                                                                    </div>
+                                                                    <div class="">
+                                                                        <figure><img
                                                                                 src="./images/common-images/viewer.png" />
-                                                                        </span><span class="pressDate">256</span></div>
+                                                                        </figure>
+                                                                        <p class="pressDate">256
+                                                                        </p>
+                                                                    </div>
                                                                     <div class=""><span><img
                                                                                 src="./images/common-images/chat.png" />
-                                                                        </span><span class="pressDate">56</span></div>
+                                                                        </span>
+                                                                        <p class="pressDate">56
+                                                                        </p>
+                                                                    </div>
                                                                 </div>
 
                                                                 <div class="pressTextInn">
-                                                                    <a href="#" tabindex="0" class="press-text">Lorem ipsum dolor sit amet,
+                                                                    <a href="#" tabindex="0" class="press-text">Lorem
+                                                                        ipsum dolor sit amet,
                                                                         consectetur
                                                                         adipiscing elit, sed do eiusmod tempor
                                                                     </a>
@@ -1648,15 +1879,15 @@
                                                 <div class="row row_6 mb-0">
                                                     <div class="col col_6">
                                                         <div class="inputBox submitBox tar">
-                                                            <button href="" class="common-btn color-red">
-                                                                <span>Submit</span>
+                                                            <div class="common-btn color-red">
+                                                                <input type="submit" value="Submit" />
                                                                 <div class="button-dot color-blue">
                                                                     <img src="./images/common-images/button-dot.png"
-                                                                        alt="arrow-right">
+                                                                        alt="button-dot">
                                                                 </div>
-
-                                                            </button>
+                                                            </div>
                                                         </div>
+
                                                     </div>
                                                 </div>
 
@@ -1683,13 +1914,29 @@
 
             <div class="row align-items-end mb-4">
                 <!-- Logo + Text -->
-                <div class="col-12 footer-main-heading">
-                    <div class="test">
-                        <h2>Let's <span>Contact</span></h2>
+                <div  class="footerTop">
+                    <div class="footerTopText">
+                        <span class="footHvrCir" style="left: 57px; top: 500px;">
+                           <img
+                                src="./images/footer/Arrow-f.png"
+                                alt="img"
+                                 class="entered lazyloaded">
+                                 <!-- <noscript><img
+                                    src="./images/footer/Arrow-f.png"
+                                    alt="img" /></noscript> -->
+                        </span>
+                        <a href="https://www.promotedge.com/contact-us/" class="footerTopHead">
+                            let's <span>talk</span>  </a>
                     </div>
-                    <span class="footerhvrArr">
-                        <img src="./images/footer/Arrow-f.png" alt="arrow" />
-                    </span>
+                    <a href="https://www.promotedge.com/contact-us/" class="footHvrCir">
+                        
+                        <img src="./images/footer/Arrow-f.png"
+                            alt="img"
+                            class="entered lazyloaded">
+                            <!-- <noscript><img
+                                src="./images/footer/Arrow-f.png"
+                                alt="img" /></noscript> -->
+                    </a>
                 </div>
                 <div class="col-md-4">
                     <img src="./images/footer/footer-logo.png" alt="Maan Shakti Logo" class="footer-logo mb-3">

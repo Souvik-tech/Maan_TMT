@@ -263,6 +263,9 @@
 .application .smallTitle.text-white::before {
     background-color: var(--color-red);
 }
+.tabpanel{
+    height: 922px;
+}
 
 .application [role='tablist'] {
     width: 75%;
@@ -270,6 +273,7 @@
     bottom: 0;
     display: flex;
     gap: 5px;
+    z-index: 2;
 }
 .tab-btn-wrap{
     padding: 0 10px;
@@ -374,16 +378,17 @@
 
 .application [role='tabpanel'] {
     min-height: 300px;
+    background-size: cover;
     margin-top: -2px;
     border: 2px solid var(--purple);
     border-top: 4px solid var(--pink);
-    border-radius: 0 0 15px 15px;
+    /* border-radius: 0 0 15px 15px; */
     position: relative;
     z-index: 2;
 }
-.tabpanels{
+/* .tabpanels{
     margin-bottom: 290px;
-}
+} */
 
 .application [role='tabpanel']:not([tabindex]) {
     display: none;
@@ -710,13 +715,16 @@
 
 
 /* dealershipsec */
+.deailership-sec{
+    background-color: rgba(237, 239, 244, 1);
+}
 .deailership-sec .d-flex{
     flex-wrap: nowrap;
 }
 
 .deailership-sec .common-btn {
     padding: 6px;
-    padding-left: 13px;
+    padding-left: 20px;
     font-size: 16px;
 }
 .deailership-sec .common-btn span{

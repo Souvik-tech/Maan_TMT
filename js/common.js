@@ -22,6 +22,34 @@ $(window).scroll(function () {
     header.removeClass('show');
   }
 });
+
+// search overlay
+
+
+  const searchIcon = document.querySelector('.icons-header .search');
+  const searchOverlay = document.getElementById('search-overlay');
+  const closeSearch = document.getElementById('close-search');
+
+  // Show overlay
+  searchIcon.addEventListener('click', (e) => {
+    e.preventDefault();
+    searchOverlay.classList.add('active');
+  });
+
+  // Hide overlay
+  closeSearch.addEventListener('click', () => {
+    searchOverlay.classList.remove('active');
+  });
+
+  // Close when clicking outside the input/form
+  searchOverlay.addEventListener('click', (e) => {
+    if (e.target === searchOverlay) {
+      searchOverlay.classList.remove('active');
+    }
+  });
+
+
+
 document.getElementById("scrollTotop").addEventListener("click", function () {
   window.scrollTo({
     top: 0,
@@ -32,32 +60,21 @@ document.getElementById("scrollTotop").addEventListener("click", function () {
 
 // footer arrow
 
-window.addEventListener("DOMContentLoaded", function () {
-  const $arrow = $(".footerhvrArr");
+window.addEventListener('DOMContentLoaded', function() {
+    $(".tetimonial-show-more").click(function() {
+        var $testimonialText = $(this)
+            .closest(".testiContent")
+            .find(".testimonial_text");
 
-  $(".footer-main-heading h2").on("mouseenter", function () {
-    $arrow.addClass("active");
-  });
+        if ($testimonialText.hasClass("show-more-height")) {
+            $(this).text("Show More");
+        } else {
+            $(this).text("Show Less");
+        }
 
-  $(".footer-main-heading h2").on("mouseleave", function () {
-    $arrow.removeClass("active");
-  });
-
-  $(document).on("mousemove", function (e) {
-    if ($arrow.hasClass("active")) {
-      $arrow.css({
-        left: e.clientX + "px",
-        top: e.clientY + "px",
-      });
-    }
-  });
-
-  // Optional click action
-  $arrow.on("click", function () {
-    alert("Arrow clicked!");
-  });
+        $testimonialText.toggleClass("show-more-height");
+    });
 });
-
 // count up
 $(".counter").countUp();
 
@@ -166,3 +183,40 @@ $(document).ready(function () {
     $(".pressSlick").slick("setPosition");
   });
 });
+
+
+
+// sidebar enquiry
+
+
+  $(document).ready(function () {
+    // Open panel
+    $('.enquire-btn').on('click', function (e) {
+      e.preventDefault();
+      $('#enquiry-panel').addClass('active');
+      $('body').addClass('panel-open');
+    });
+
+    // Close panel via close button
+    $('#close-enquiry').on('click', function () {
+      $('#enquiry-panel').removeClass('active');
+      $('body').removeClass('panel-open');
+    });
+
+    // Click outside to close
+    $(document).on('click', function (e) {
+      const $panel = $('#enquiry-panel');
+      const $button = $('.enquire-btn');
+      if (
+        !$panel.is(e.target) &&
+        $panel.has(e.target).length === 0 &&
+        !$button.is(e.target) &&
+        $button.has(e.target).length === 0 &&
+        $panel.hasClass('active')
+      ) {
+        $panel.removeClass('active');
+        $('body').removeClass('panel-open');
+      }
+    });
+  });
+

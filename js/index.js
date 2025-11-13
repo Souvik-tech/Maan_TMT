@@ -33,7 +33,18 @@ jQuery(document).ready(function($) {
 });
 
 
+// whyc choose tab
 
+document.addEventListener("DOMContentLoaded", function() {
+  const tabLinks = document.querySelectorAll('.custom-tabs .nav-link');
+
+  tabLinks.forEach(link => {
+    link.addEventListener('mouseenter', function() {
+      const tabTrigger = new bootstrap.Tab(this);
+      tabTrigger.show();
+    });
+  });
+});
 
 gsap.registerPlugin(ScrollTrigger);
 
