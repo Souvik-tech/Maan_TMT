@@ -1,0 +1,898 @@
+/* Roboto condesed font */
+/* Thin (100) */
+@font-face {
+  font-family: "Roboto Condensed";
+  src: url("../fonts/RobotoCondensed-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+/* Light (300) */
+@font-face {
+  font-family: "Roboto Condensed";
+  src: url("../fonts/RobotoCondensed-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* Regular (400) */
+@font-face {
+  font-family: "Roboto Condensed";
+  src: url("../fonts/RobotoCondensed-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Medium (500) */
+@font-face {
+  font-family: "Roboto Condensed";
+  src: url("../fonts/RobotoCondensed-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;   
+}
+
+/* SemiBold (600) */
+@font-face {
+  font-family: "Roboto Condensed";
+  src: url("../fonts/RobotoCondensed-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* Bold (700) */
+@font-face {
+  font-family: "Roboto Condensed";
+  src: url("../fonts/RobotoCondensed-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* ExtraBold (800) */
+@font-face {
+  font-family: "Roboto Condensed";
+  src: url("../fonts/RobotoCondensed-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+/* Black (900) */
+@font-face {
+  font-family: "Roboto Condensed";
+  src: url("../fonts/RobotoCondensed-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* Italic Versions (optional) */
+@font-face {
+  font-family: "Roboto Condensed";
+  src: url("../fonts/RobotoCondensed-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Roboto Condensed";
+  src: url("../fonts/RobotoCondensed-BoldItalic.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+}
+
+
+/* Century Gothic font  */
+
+@font-face {
+    font-family: 'CenturyGothic';
+    src: url('../fonts/centurygothic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CenturyGothic';
+    src: url('../fonts/centurygothic_bold.ttf') format('truetype');
+    font-weight: bold;
+}
+
+/* barlow condensed font */
+
+/* Regular */
+@font-face {
+  font-family: "Barlow Condensed";
+  src: url("../fonts/BarlowCondensed-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Medium */
+@font-face {
+  font-family: "Barlow Condensed";
+  src: url("../fonts/BarlowCondensed-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* SemiBold */
+@font-face {
+  font-family: "Barlow Condensed";
+  src: url("../fonts/BarlowCondensed-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* Bold */
+@font-face {
+  font-family: "Barlow Condensed";
+  src: url("../fonts/BarlowCondensed-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* ExtraBold */
+@font-face {
+  font-family: "Barlow Condensed";
+  src: url("../fonts/BarlowCondensed-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+/* Italic */
+@font-face {
+  font-family: "Barlow Condensed";
+  src: url("../fonts/BarlowCondensed-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+
+
+
+:root {
+    --heading-font: 'Roboto Condensed', sans-serif;
+    --secondary-font: 'CenturyGothic', sans-serif;
+    --barlow-font:  "Barlow Condensed", sans-serif;
+    --color-blue: #072E9F;
+    --color-red: #D50009;
+}
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--heading-font);
+}
+.color-blue {
+    background-color: var(--color-blue);
+}
+p{
+    font-family: var(--secondary-font);
+}
+.rel{
+  position: relative;
+}
+.color-red {
+    background-color: var(--color-red);
+}
+
+.text-red {
+    color: var(--color-red);
+}
+
+.text-blue {
+    color: var(--color-blue);
+}
+
+.text-white {
+    color: #FFFFFF;
+}
+
+.red-line {
+    width: 100%;
+    height: 1px;
+    background-color: var(--color-red);
+}
+
+p {
+    margin: 0 !important;
+}
+.custom-padding-80{
+    padding: 0 80px !important;
+}
+.pb-60{
+    padding-bottom: 60px;
+}
+.enquire-btn {
+    padding: 10px 17px;
+    top: 50%;
+    right: -80px;
+    z-index: 30;
+    width: 200px;
+    height: 40px;
+    display: flex;
+    font-size: 18px;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    background-color: var(--color-red);
+    border: 1px solid #fff;
+    transform: translateY(-50%) rotate(-90deg);
+    border-radius: 10px 10px 0 0;
+}
+
+.enquire-btn span {
+
+    font-family: var(--secondary-font);
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+
+}
+.mb-75{
+    margin-bottom: 75px;
+}
+.common-btn {
+    text-decoration: none;
+    color: #FFFFFF;
+    border: none;
+    display: inline-flex;
+    border-radius: 85px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 9px 12px;
+    padding-left: 23px;
+    cursor: pointer;
+    font-size: 25px;
+    font-family: var(--secondary-font);
+    font-weight: bold;
+}
+
+.common-btn span{
+    margin-right: 20px;
+}
+.button-dot {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+
+
+.wp-icon {
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    width: 53px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 53px;
+    z-index: 5;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    padding: 8px;
+    background-color: var(--color-blue);
+}
+
+.common-sec-padding {
+    position: relative;
+    padding: 120px 0;
+}
+
+.commonFAQWrap {
+    background-color: #EDEFF4;
+}
+
+.getInTouchWrap {
+    background-color: #fff;
+    padding: 50px 25px;
+    border-radius: 15px;
+    position: relative;
+
+
+}
+
+.getInTouchWrap::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 15px;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+
+}
+
+.getInTouchWrapInner {
+    position: relative;
+    z-index: 5;
+}
+
+.getInTouchWrap::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-red);
+    border-radius: 15px;
+    right: -7px;
+    bottom: -7px;
+    z-index: 1;
+    box-shadow: 3px 20px 25px 8px #00000029;
+}
+.smallTitle.text-white::before{
+    background-color: #fff;
+}
+.what-we-offer-sec .secHead{
+    margin-bottom: 0;
+}
+.submitBox {
+    display: flex;
+    justify-content: end;
+}
+.submitBox button {
+    padding:10px 10px 10px 25px;
+}
+.submitBox button span{
+    margin-right: 25px;
+}
+.getInTouchWrap input,
+.getInTouchWrap textarea,
+.inputBox select {
+    width: 100%;
+    padding: 16px 25px;
+    border-radius: 45px;
+    font-family: var(--secondary-font);
+    font-size: 18px;
+    margin-bottom: 20px;
+    box-shadow: none;
+    border: none;
+    background: #f1f1f1;
+}
+.inputBox select{
+    position: relative;
+     appearance: none;           
+  -webkit-appearance: none;   
+  -moz-appearance: none;
+}
+.selectwrap {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+.inputBox.selectwrap::after{
+ content: "";
+    position: absolute;
+    right: 19px;
+    top: 39%;
+    width: 0;
+    height: 0;
+    pointer-events: none;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 12px solid var(--color-blue);
+    transform: translateY(-50%);
+}
+input::placeholder,
+textarea::placeholder {
+    color: #000;
+    font-size: 18px;
+    opacity: 1;
+
+}
+
+.faqTitle {
+    cursor: pointer;
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+}
+
+.faqTitle h3 {
+    font-family: var(--secondary-font);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 15px;
+    color: #D50009;
+    margin-bottom: 0;
+    padding: 22px 0 22px 15px;
+    background-color: #fff;
+}
+
+.fqContInner p {
+    font-family: var(--secondary-font);
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.faqArr {
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-red);
+    height: 60px;
+    padding: 25px 30px;
+    border-radius: 0 5px 5px 0;
+}
+
+.eachFaq.active .faqArr img {
+    transform: rotate(0deg);
+}
+
+.faqArr img {
+    transition: 0.4s;
+    transform: rotate(180deg);
+}
+
+.secHead {
+    font-family: var(--heading-font);
+    font-weight: 900;
+    font-size: 74px;
+    margin-bottom: 35px;
+    line-height: 88px;
+    text-transform: uppercase;
+    color: var(--color-blue);
+}
+
+.smallTitle {
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    font-size: 20px;
+    font-style: italic;
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 17px;
+    display: block;
+}
+
+.smallTitle::before {
+    content: '';
+    width: 11px;
+    height: 11px;
+    background-color: var(--color-red);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+}
+
+.eachFaqInner {
+    margin-bottom: 20px;
+}
+
+.fqContInner p {
+    padding: 20px 0 30px 0;
+    border-bottom: 1px solid #00000026;
+}
+
+/* faq design */
+
+.commonFAQWrap .faqWrap .eachFaq .eachFaqInner .faqCont {
+    display: none;
+}
+
+.commonFAQWrap .faqWrap .eachFaq.active .eachFaqInner .faqCont {
+    display: block;
+}
+
+
+/* 
+counter design */
+.counterNumber {
+    font-family: var(--barlow-font);
+    font-size: 65px;
+    font-weight: 700;
+    line-height: 40px;
+    margin-bottom: 35px;
+    color: var(--color-red);
+}
+
+.counterText{
+    font-family: var(--secondary-font);
+    font-size: 22px;
+    font-weight: 400;
+    color: #000;
+}
+
+
+/* offerSwiper */
+
+.offerSwiper .swiper {
+  padding: 30px 0;
+}
+.what-we-offer-sec .swiper{
+    overflow: visible;
+}
+.navigation-btn {
+    height: 45px;
+    position: relative;
+}
+.navigation-btn  .swiper-button-prev,
+.navigation-btn  .swiper-button-next {
+  color: white;
+  background: transparent;
+  opacity: 0.5;
+    border-radius: 5px;
+    border: 1px solid #fff;
+  width: 45px;
+  height: 45px;
+}
+.navigation-btn  .swiper-button-prev::after,
+.navigation-btn  .swiper-button-next::after {
+  content: normal;
+}
+.navigation-btn .swiper-btn:hover{
+    background-color: transparent;
+    opacity: 1;
+}
+.navigation-btn  .swiper-button-prev{
+    left: 65%;
+}
+.swiper-button-next img{
+    transform: rotate(180deg);
+}
+
+
+
+
+
+/* press release */
+
+
+
+.pressSec {
+  overflow-x: hidden;
+}
+
+.pressSec .pressSecBtm .newsTabWrap ul.tabs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 50px;
+}
+
+.pressSec .pressSecBtm .newsTabWrap ul.tabs li {
+  font-size: 20px;
+  padding: 15px 40px;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
+  color: rgba(89, 89, 89, 1);
+  background-color: transparent;
+  transition: all 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 400;
+  font-family: var(--secondary-font);
+
+}
+.pressLabel{
+    display: none !important;
+}
+.pressSec .pressSecBtm .newsTabWrap ul.tabs li.active {
+  background-color: var(--color-red);
+  border-color: transparent;
+  color: #fff;
+}
+
+.pressSec .pressSecBtm .newsTabWrap .tabWrapInner .tabContWrap .tab_content {
+  display: none;
+}
+
+.pressSec .pressSecBtm .newsTabWrap .tabWrapInner .tabContWrap .tab_content.active {
+  display: block;
+}
+
+.pressSec .pressSecBtm .newsTabWrap .tabWrapInner .tabContWrap .tab_content .accTrigger {
+  display: none;
+}
+
+.pressSec .pressSecBtm .newsTabWrap .tabWrapInner .tabContWrap .tab_content .accInner {
+}
+
+/* press slider */
+.pressSlider .slick-list {
+  /* margin: 0px -100px; */
+}
+
+.pressSlider .slick-arrow {
+  width: 48px;
+  height: 48px;
+}
+
+.pressSlider .slick-arrow::after {
+  font-size: 20px;
+}
+
+.pressSlider .slick-arrow.slick-prev {
+  left: 20px;
+}
+
+.pressSlider .slick-arrow.slick-next {
+  right: 20px;
+}
+
+ .pressSlide {
+    position: relative;
+  padding: 0px 20px;
+  padding-bottom: 28px;
+  margin: 0 15px;
+}
+.pressSlide {
+  margin-bottom: 45px
+}
+ .pressSlide::after{
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 60%;
+    z-index: -1;
+    transition: 0.4s;
+    border-radius: 10px;
+    background-color: rgba(237, 239, 244, 1);
+}
+ .pressSlide:hover::after{
+    background-color: var(--color-blue);
+}
+ .pressSlide .pressCard .pressImg {
+  width: 100%;
+  height: 350px;
+  display: flex;
+  border-radius: 20px;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+
+ .pressSlide .pressCard .pressImg a {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  /* margin: 0 17px; */
+}
+
+ .pressSlide .pressCard .pressImg a .pressLabel {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 6px 12px;
+}
+
+ .pressSlide .pressCard .pressImg a .pressLabel p {
+  text-align: center;
+  font-weight: 500;
+}
+
+ .pressSlide .pressCard .pressImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  transition: all 0.5s;
+  overflow: hidden;
+}
+.pressText{
+    padding: 0 17px;
+}
+ .pressSlide .pressCard .pressText .pressDate {
+  color: #5E5E5E;
+  margin-bottom: 8px;
+  font-weight: 500;
+  transition: all 0.5s;
+   padding-left: 10px;
+   font-size: 16px;
+}
+
+ .pressSlide .pressCard .pressText .pressTextInn {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.pressCardSub-wrap>div{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+ .pressSlide .pressCard .pressText .pressTextInn a {
+  color: #000;
+  font-size: 18px;
+  text-decoration: none;
+  font-family: var(--secondary-font);
+  transition: all 0.5s;
+}
+.pressDate{
+    font-weight: var(--secondary-font);
+    padding-left: 6px;
+}
+.pressCardSub-wrap{
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px;
+}
+.press-btn{
+    display: flex;
+    align-items: center;
+}
+.press-btn span{
+    font-size: 18px;
+    margin-right: 5px;
+    color: rgba(0, 0, 0, 1);
+    font-family: var(--secondary-font);
+}
+
+/*  .pressSlide:hover  .pressText .pressDate {
+  color: #fff;
+ font-weight: 700;
+} */
+
+ .pressSlide:hover .pressCard .pressText .pressTextInn a {
+  color: #fff;  
+}
+.pressSlide:hover .pressDate {
+    
+  color: #fff;
+}
+.pressSlide .pressCardSub-wrap span img{
+    filter: none;
+    transition: 0.4s;
+}
+.pressSlide:hover .pressCardSub-wrap span img{
+
+    filter: brightness(0) invert(1);
+}
+
+.pressTextInn .press-text{
+    font-size: 18px;
+    color: rgba(0, 0, 0, 1);
+    line-height: 27px;
+    margin-bottom: 30px;
+    text-decoration: none;
+    font-family: var(--secondary-font);
+    transition: 0.4s;
+    display: block;
+
+}
+.pressSlide:hover .pressTextInn .press-text{
+    color: #fff;
+}
+.press-btn{
+    text-decoration: none;
+}
+.pressSlide:hover .press-btn span{
+    color: #fff;
+}   
+
+
+/* prs navigation */
+.accCont.tabContinner{
+    position: relative;
+}
+.prs-nav {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    z-index: 10;
+    pointer-events: none;
+}
+
+.prs-nav .btn {
+    width: 36px;
+    height: 36px;
+    padding: 10px;
+    display: flex;
+    opacity: 0.5;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+    background: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+    pointer-events: all;
+    transition: opacity 0.3s ease;
+}
+
+.prs-nav .btn:hover {
+  border: 1px solid;
+    opacity: 1;
+}
+
+.prs-swiper-button-prev {
+    position: absolute;
+    left: -50px;
+}
+
+.prs-swiper-button-next {
+    position: absolute;
+    right: -50px;
+}
+.prs-swiper-button-next {
+    transform: rotate(180deg);
+}
+
+
+
+
+
+/* innerbanner */
+
+.innerBanner{
+  height: 690px;
+  position: relative;
+  display: flex;
+  justify-content: start;
+  align-items: flex-end;
+}
+.innerBanner .container-fluid{
+  position: relative;
+  margin: 0 50px !important;
+}
+.innerBanner .innerBannerTitle{
+  font-size: 90px;
+  text-transform: uppercase;
+  font-family: var(--heading-font);
+  font-style: italic;
+  color: #fff;
+  line-height: 63px;
+  font-weight: 900;
+  margin-bottom: 0 !important;
+}
+
+
+.tsDEtails {
+    padding: 0 10px;
+    min-width: 200px;
+}
+
+.tsDEtails h4 {
+    color: rgba(7, 46, 159, 1);
+    margin-bottom: 8px;
+    font-size: 20px;
+    line-height: 24px;
+    font-family: var(--secondary-font);
+    font-weight: 700;
+}
+
+.tsDEtails p {
+    font-size: 16px;
+    line-height: 20px;
+    white-space: nowrap;
+    color: #666;
+}
+.bgGrayNew{
+  background-color: rgba(237, 239, 244, 1);
+}
+.mb-48{
+  margin-bottom: 48px;
+}
